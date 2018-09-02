@@ -1,13 +1,15 @@
 <?php
 
-require_once("config.php");
+require_once ("config.php");
 
 use Cliente\Cadastro;
 
-$pessoa = new Cadastro();
+$cad = new Cadastro();
 
-$pessoa->setName("Junyor FF12");
-$pessoa->setEmail("jr@jr.com");
-$pessoa->setSenha("123456");
+$cad->setName("Jrff12");
+$cad->setEmail("jr@jr.com");
+$cad->setSenha("1234");
 
-$pessoa->registrarVenda();
+$cad->registrarVenda();
+
+echo $cad;

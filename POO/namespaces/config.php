@@ -1,13 +1,13 @@
 <?php
 
-spl_autoload_register(function($nameClass)
-{   
-	//var_dump($nameClass);
-    $dir = "class";
-    $filename = $dir . DIRECTORY_SEPARATOR . $nameClass . ".php";
+spl_autoload_register( function ($nameclass) {
 
-    if (file_exists($filename)) {
+	$dirclass = "class";  
 
-    	require_once($filename);
-    }
+	$filename = $dirclass . DIRECTORY_SEPARATOR . $nameclass . ".php";
+    
+	if (file_exists($filename)) {
+
+		require_once($filename);
+	}
 });
